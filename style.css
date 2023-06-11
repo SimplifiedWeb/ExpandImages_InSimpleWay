@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(37, 53, 53);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .content {
+  height: 70%;
+  width: 89%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content .action {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container .content .action img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.container .content .action p {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  display: none;
+  color: white;
+}
+.container .content .action:hover img {
+  transition: 0.5s;
+  width: 600px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.container .content .action:hover p {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  display: block;
+  color: white;
+}
+@media screen and (max-width: 480px) {
+  .container .content .action:nth-child(5), .container .content .action:nth-child(6), .container .content .action:nth-child(4), .container .content .action:nth-child(2), .container .content .action:nth-child(7) {
+    display: none;
+  }
+  .container .content .action:hover img {
+    width: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */
